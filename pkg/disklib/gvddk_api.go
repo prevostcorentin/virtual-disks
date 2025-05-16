@@ -221,7 +221,7 @@ func prepareCreateParams(createSpec VixDiskLibCreateParams) *C.VixDiskLibCreateP
 	createParams.diskType = C.VixDiskLibDiskType(createSpec.diskType)
 	createParams.adapterType = C.VixDiskLibAdapterType(createSpec.adapterType)
 	createParams.hwVersion = C.uint16(createSpec.hwVersion)
-	createParams.capacity = C.VixDiskLibSectorType(createSpec.capacity)
+	//reateParams.capacity = C.VixDiskLibSectorType(createSpec.capacity)
 	return createParams
 }
 
