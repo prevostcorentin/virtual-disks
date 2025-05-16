@@ -19,8 +19,8 @@ package main
 import (
 	"fmt"
 	"github.com/sirupsen/logrus"
-	"github.com/vmware/virtual-disks/pkg/disklib"
-	"github.com/vmware/virtual-disks/pkg/virtual_disks"
+	"github.com/prevostcorentin/virtual-disks/pkg/disklib"
+	"github.com/prevostcorentin/virtual-disks/pkg/virtual_disks"
 	"os"
 	"testing"
 )
