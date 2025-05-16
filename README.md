@@ -1,3 +1,16 @@
+# WHY ?
+
+Original virtual-disks does not cross-compile using mingw.
+
+```
+$ CC="x86_64-w64-mingw32-gcc.exe" go build 
+# github.com/vmware/virtual-disks/pkg/disklib
+C:\Windows\system32\config\systemprofile\go\pkg\mod\github.com\vmware\virtual-disks@v0.0.5\pkg\disklib\gvddk_api.go:224:15: createParams.capacity undefined (type *_Ctype_struct___4 has no field or method capacity)
+```
+
+This fork simply removes that member definition, thus breaking disk creation parameters creation but makes it buildable using mingw.
+
+
 # virtual-disks
 
 Go Library for Virtual Disk Development Kit (a.k.a. virtual-disks) is a Golang 
