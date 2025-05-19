@@ -1,6 +1,6 @@
 module github.com/prevostcorentin/virtual-disks
 
-go 1.22.3
+go 1.21
 
 require (
 	github.com/pkg/errors v0.9.1
